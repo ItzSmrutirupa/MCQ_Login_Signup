@@ -146,7 +146,7 @@ app.post('/submit-test', async (req, res) => {
         return res.status(400).json({ success: false, message: 'User has already taken the test' });
       }
   
-      // Calculating the score based on the user's answers and the correct answers(You need to define this logic)
+      // Calculating the score based on the user's answers and the correct answers
       const score = calculateScore(testId, answers);
   
       // Store the user's responses in the database
